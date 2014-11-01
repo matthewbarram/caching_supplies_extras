@@ -1,3 +1,4 @@
+<script>
 $( document ).ready(function() {
 
   var $pricesArray = $(".sqs-money-native");
@@ -23,8 +24,11 @@ $( document ).ready(function() {
 
   var $subtotalElement = $(".sqs-fullpage-shopping-cart-content > .cart-container > .subtotal >.label");
 
+
+
   if ($subtotalElement.exists()){
       $subtotalElement.html("Subtotal (excluding GST)");
   }
   addGstToPrice();
 });
+</script>
