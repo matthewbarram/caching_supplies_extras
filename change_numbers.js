@@ -1,10 +1,10 @@
 <script>
 $( document ).ready(function() {
 
-  var $pricesArray = $(".sqs-money-native");
+  var $prices = $(".sqs-money-native");
 
-  function newTotal(pricesArray, i){
-    var oldTotal = $($pricesArray[i]).text();
+  function newTotal(prices, i){
+    var oldTotal = $($prices[i]).text();
     var integerAmount = parseFloat(oldTotal);
     var newTotal = integerAmount * 1.1;
     var finalFloat = parseFloat(newTotal).toFixed(2);
@@ -12,7 +12,7 @@ $( document ).ready(function() {
   };
 
   function addGstToPrice(){
-    for (var i = 0; i < $pricesArray.size(); i++) {
+    for (var i = 0; i < $prices.size(); i++) {
       $($(".sqs-money-native")[i]).html(newTotal($pricesArray, i));
     };
   };
@@ -26,6 +26,8 @@ $( document ).ready(function() {
   if ($subtotalElement.exists()){
       $subtotalElement.html("Subtotal (excluding GST)");
   }
+
   addGstToPrice();
+
 });
 </script>
