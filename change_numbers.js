@@ -2,6 +2,8 @@
 <script>
 $( document ).ready(function() {
 
+  $(".sqs-block-search").prependTo("#page")
+
   var $pricesArray = $(".sqs-money-native");
 
   $(".sold-out").html("Coming Soon")
