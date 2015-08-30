@@ -2,6 +2,12 @@
 <script>
 $( document ).ready(function() {
 
+  var pathname = window.location.pathname;
+
+  if(pathname == "commerce/order-confirmed") {
+    throw new Error("Does not need to run (order confirmation page)");
+  }
+
   $(".sqs-block-search").prependTo("#page")
 
   var $pricesArray = $(".sqs-money-native");
@@ -62,15 +68,15 @@ $( document ).ready(function() {
 </script>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://s3.amazonaws.com/f.cl.ly/items/1J0v3z032p0n3Z2a0u11/subbscribe.min.js"></script>
+<script src="https://s3.amazonaws.com/f.cl.ly/items/0A2z3k47270t3S3z3B1M/subbscribe.js"></script>
 <script>
   $('body').subbscribe({
     list: "MailChimp",
     url : "//cachingsupplies.us10.list-manage.com/subscribe/post?u=a5fe3c7ab391a2b25a06a6c79&amp;id=5905952226",
-    title: "Get 5% off your first order!",
-    text: "Save 5% off your first order and our latest posts and announcements in your inbox.",
+    title: "10% off! When you subscribe to CachingSupplies News",
+    text: "You will also then learn about great new products, monthly specials and much more!",
     name: "Matthew & the team",
-    thumbnail: "https://s3.amazonaws.com/f.cl.ly/items/2Q2D0M0b0Z1C1m0C0k1D/caching_supplies_team.jpeg",
+    thumbnail: "https://s3.amazonaws.com/f.cl.ly/items/0w2B1N3I2U3Y1p1j2k2B/caching_supplies_team.jpeg",
     emailonly: false
   });
 </script>
