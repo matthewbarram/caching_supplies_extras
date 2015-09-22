@@ -65,7 +65,6 @@ $( document ).ready(function() {
 });
 </script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://s3.amazonaws.com/f.cl.ly/items/0A2z3k47270t3S3z3B1M/subbscribe.js"></script>
 <script>
   $('body').subbscribe({
