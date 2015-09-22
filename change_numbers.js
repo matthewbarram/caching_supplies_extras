@@ -80,3 +80,26 @@ $( document ).ready(function() {
 </script>
 
 <script type="text/javascript" data-cfasync="false">(function () { var done = false;var script = document.createElement('script');script.async = true;script.type = 'text/javascript';script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';document.getElementsByTagName('HEAD').item(0).appendChild(script);script.onreadystatechange = script.onload = function (e) {if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {var w = new PCWidget({ c: '3583e936-7377-4b39-a0a2-c59e9d42d171', f: true });done = true;}};})();</script>
+
+<script>
+  $('.sqs-add-to-cart-button').on('click', function() {
+  	ga('send', 'event', 'button', 'click', 'add_to_cart_button');
+   });
+
+  $('.checkout-button ').on('click', function() {
+    ga('send', 'event', 'button', 'click', 'checkout_button');
+  });
+
+  $('.subb-button').on('click', function() {
+   ga('send', 'event', 'button', 'click', 'sign_up_to_newsletter_model');
+  });
+
+  $('.close-x').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'close_subscription_pop_up');
+  });
+
+  $('.sqs-search-ui-text-input').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'search_field_clicked_into');
+  });
+
+ </script>
