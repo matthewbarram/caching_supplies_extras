@@ -4,15 +4,13 @@ $( document ).ready(function() {
 
   var pathname = window.location.pathname;
 
-  if(pathname == "commerce/order-confirmed") {
+  if(pathname == "/commerce/order-confirmed") {
     throw new Error("Does not need to run (order confirmation page)");
   }
 
   $(".sqs-block-search").prependTo("#page")
 
   var $pricesArray = $(".sqs-money-native");
-
-  $(".sold-out").html("Coming Soon")
 
   function getNewTotal(pricesArray, i){
     var oldTotal = $($pricesArray[i]).text();
