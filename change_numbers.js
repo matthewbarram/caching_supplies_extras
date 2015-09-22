@@ -62,6 +62,18 @@ $( document ).ready(function() {
 
   });
 
+  var $eventContentSelector = $(".sqs-events-collection-list")
+  var eventContent = '<p>These are the events that Caching Supplies is able to ship to as "Event Pickup". This means that we will have someone either at the event or bring orders to these events meaning you can get free shipping<p></hr></br>'
+
+  function addEventContent(){
+    $eventContentSelector.prepend(eventContent);
+  };
+
+
+  if (window.location.pathname === "/event-pickup/") {
+    addEventContent();
+  };
+
 });
 </script>
 
