@@ -65,12 +65,13 @@ $( document ).ready(function() {
 });
 </script>
 
-<script src="https://s3.amazonaws.com/f.cl.ly/items/0A2z3k47270t3S3z3B1M/subbscribe.js"></script>
+<script src="https://s3.amazonaws.com/f.cl.ly/items/2D1V2u3o1j003D1U0z1X/subbscribe.js"></script>
 <script>
   $('body').subbscribe({
     list: "MailChimp",
     url : "//cachingsupplies.us10.list-manage.com/subscribe/post?u=a5fe3c7ab391a2b25a06a6c79&amp;id=5905952226",
-    title: "10% off! When you subscribe to CachingSupplies News",
+    color: "#324F17",
+    title: "5% off your first order when you sign up to CachingSupplies News.",
     text: "You will also then learn about great new products, monthly specials and much more!",
     name: "Matthew & the team",
     thumbnail: "https://s3.amazonaws.com/f.cl.ly/items/0w2B1N3I2U3Y1p1j2k2B/caching_supplies_team.jpeg",
